@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Show from "./pages/Show";
 import NotFound from "./pages/NotFound";
 
+
 // This wrapper ensures that the page scrolls to the top when the route changes
 function RouteWrapper() {
   const { pathname } = useLocation();
