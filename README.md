@@ -34,4 +34,4 @@ Not to be confused with system requirements, the application requirements are th
 
 ## Design decisions
 
-Here we clarify the design decisions that we made when developing the application.
+- We name pages/views as `XXXView` to differentiate them from components
