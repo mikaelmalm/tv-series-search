@@ -1,33 +1,59 @@
+import { createTheme } from "@mui/material/styles";
 
-import { createTheme } from '@mui/material/styles';
+declare module "@mui/material/styles" {
+  interface Palette {
+    yellow: Palette["primary"];
+  }
+  interface PaletteOptions {
+    yellow?: PaletteOptions["primary"];
+  }
+}
 
 const theme = createTheme({
-  typography: { 
+  palette: {
+    primary: {
+      main: "#14151a",
+    },
+    yellow: {
+      main: "#FFD700",
+    },
+  },
+  typography: {
     h1: {
-      fontSize: "2rem",
+      fontSize: "5rem",
       fontWeight: 500,
-    }, 
+    },
     h2: {
-      fontSize: "1.5rem",
+      fontSize: "1.8rem",
       fontWeight: 500,
     },
     h3: {
       fontSize: "1.25rem",
       fontWeight: 500,
     },
-  
+    button: {
+      fontSize: "1rem",
+      fontWeight: 500,
+      textTransform: "none",
+    },
   },
   spacing: 8,
   components: {
     MuiCssBaseline: {
       styleOverrides: `
         body {
-          background-color: #f5f5f5;
+          background-color: #f9f9f9;
         }
+
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+
+
       `,
     },
-    
-  }
+  },
 });
 
 export default theme;
