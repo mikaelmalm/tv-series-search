@@ -49,3 +49,4 @@ Not to be confused with system requirements, the application requirements are th
 - Load more shows after the user goes to the last page
 - Better test coverage regarding the components
 - Better skeleton loading, for now it is just a common one for all components
+- Handle typography better, for now it wraps the MUI component with smaller named ones, but it does not extend the MUI props with typescript, so margin, padding, etc. are not available
