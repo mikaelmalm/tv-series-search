@@ -11,8 +11,8 @@ When developed, the application was build using [Bun](https://bun.sh), however, 
 1. Clone the repository
 2. Run `npm install` to install the dependencies
 3. Run `npm run start ` to start the application in development mode
-4. Run `npm run build` to build the application for production
-5. Run `npm run preview` to preview the production build
+4. Run `npm run build` to build the application for production (recommended)
+5. Run `npm run preview` to preview the production build (recommended)
 
 ## Tech Stack
 
