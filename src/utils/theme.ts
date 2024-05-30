@@ -22,10 +22,16 @@ const theme = createTheme({
     h1: {
       fontSize: "5rem",
       fontWeight: 500,
+      "@media (max-width:600px)": {
+        fontSize: "3rem",
+      },
     },
     h2: {
       fontSize: "1.8rem",
       fontWeight: 500,
+      "@media (max-width:600px)": {
+        fontSize: "1.4rem",
+      },
     },
     h3: {
       fontSize: "1.25rem",
